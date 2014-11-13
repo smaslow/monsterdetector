@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Monster Detector</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="stylesheet" type="text/css" href="style/improviber-master.css" />
+		<script type="text/javascript" charset="utf-8" src="script/phonegap.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="style/themes/improviber.min.css" />
+		<link rel="stylesheet" href="style/jquery.mobile.structure-1.0.min.css" /> 		
+		<script type="text/javascript" src="script/jquery-1.6.4.min.js"></script>
+		<script type="text/javascript" src="script/jquery.mobile-1.0.min.js"></script>	
+		
+		<script type="text/javascript">
+			
+			//jQuery Functions
+			$( '#main' ).live( 'pageinit',function(event){
+				//alert( 'This page is loaded and ready to go' );
+				
+				//add more functions here if desired
+				//...			  
+			});
+			
+			function buttonClicked(oButton)
+			{
+				$("#clickedButton").val(oButton.id);
+			}
+		</script>
+	</head>
+	
+	<body>
+		
+		<div data-role="page" id="main" style="background-image:url('images/greenmonsterbackground.jpg');">
+		
+			<center>
+				<img src="images/monsterdetectorlogo.png" alt="logo" style="width:85%;text-align:center;margin-top:50px;" />
+			</center>
+			
+			<center>
+				<table width="95%">
+					<tr>
+						<td><a href="balloony-info.html" data-transition="flip" data-rel="dialog"><img src="images/balloony.png" alt="Balloony" style="width:150px;" /></a></td>
+						<td>&nbsp;</td>
+						<td><a href="slimer-info.html" data-transition="flip" data-rel="dialog"><img src="images/slimer.png" alt="Slimer" style="width:150px;" /></a></td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td><a href="#" onclick="alert('No Monsters Detected!');" data-role="button" data-iconpos="top" data-icon="gear">S C A N</a></td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td><a href="furry-info.html" data-transition="flip" data-rel="dialog"><img src="images/furry.png" alt="Furry" style="width:150px;" /></a></td>
+						<td>&nbsp;</td>
+						<td><a href="multi-eyed-info.html" data-transition="flip" data-rel="dialog"><img src="images/multi-eyed.png" alt="multi-eyed" style="width:150px;" /></a></td>
+					</tr>
+				</table>
+			</center>			
+			
+			
+
+		</div>		<!--End of main page-->
+				
+	</body>
+	
+</html>

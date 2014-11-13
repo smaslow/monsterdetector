@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Monster Detector</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="stylesheet" type="text/css" href="style/improviber-master.css" />
+		<script type="text/javascript" charset="utf-8" src="script/phonegap.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="style/themes/improviber.min.css" />
+		<link rel="stylesheet" href="style/jquery.mobile.structure-1.0.min.css" /> 		
+		<script type="text/javascript" src="script/jquery-1.6.4.min.js"></script>
+		<script type="text/javascript" src="script/jquery.mobile-1.0.min.js"></script>	
+		
+		<script type="text/javascript">
+		
+			//jQuery Functions
+			
+			//PhoneGap Functions
+			function onBodyLoad()
+			{		
+				document.addEventListener("deviceready", onDeviceReady, false);
+			}
+			
+			function onDeviceReady()
+			{
+				// do your thing!
+				//navigator.notification.alert("PhoneGap is working")
+			}					
+			
+		</script>
+		
+	</head>
+	
+	<body>
+		
+		<div data-role="page" id="mainresponse" style="background-image:url('images/greenmonsterbackground.jpg');">
+
+			<center>
+				<img src="images/monsterdetectorlogo.png" alt="logo" style="width:85%;text-align:center;margin-top:50px;" />
+			</center>
+						
+			<div data-role="header" data-theme="d">
+				<h1>Furry Monster Info</h1>
+			</div>		
+
+			<div data-role="content">
+				<h2 style="text-align:center;">The Furry monster is soft and cuddly...</h2>
+				<a href="index.html" data-rel="back" data-role="button">Thanks, I'm not scared.</a>
+			</div>
+				
+		</div>
+		
+	</body>
+	
+</html>
